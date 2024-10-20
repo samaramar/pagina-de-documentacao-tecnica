@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+/* Reset básico para margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral para o corpo */
+body {
+    font-family: "Comme", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos para a barra de navegação */
+#navbar {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 10px;
+    overflow-y: auto;
+    box-shadow: 4px -1px 17px rgba(0, 0, 0, 0.4);
+    
+}
+
+#navbar header {
+    margin-bottom: 20px;
+}
+
+#navbar header h1 {
+    font-size: 1.8em;
+    
+}
+
+.nav-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 3px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+    
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+/* Estilos para o conteúdo principal */
+#main-doc {
+    margin-left: 340px; /* Largura do navbar + algum espaçamento */
+    padding: 20px;
+    font-size: 1.1em;
+    margin-top:20px;
+    margin-right:20px;
+    
+    
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.main-section header {
+    margin-bottom: 10px;
+}
+
+.main-section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilos para listas e parágrafos */
+ul, ol {
+    margin-bottom: 20px;
+    list-style-type: square; 
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.operadores {
+    margin-left: -1px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Links dentro de seções */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+
+/* Media Query para telas menores que 600px */
+@media screen and (max-width: 1000px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+        max-height: 30vh; /* Ajusta a altura máxima para 50% da altura da visualização */
+        overflow-y: auto; /* Adiciona rolagem vertical */
+        box-shadow: none;
+        flex-direction: column; 
+        margin-top:20px;/* Mantém a direção da coluna */
+    }
+    #navbar header {
+        margin-bottom: 10px;
+    }
+    .nav-link {
+        margin: 5px;
+        padding: 5px;
+    }
+    #main-doc {
+        margin-left: 0;
+        padding: 10px;
+    }
+}

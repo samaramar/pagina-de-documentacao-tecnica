@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação técnica Python</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <nav id="navbar">
+   <header><h1>Documentação Python</h1></header>
+     <a href="#Introdução" class="nav-link">Introdução</a>
+     <a href="#Características_Principais"class="nav-link">Características Principais</a>
+     <a class="nav-link" href="#Estrutura_Básica_de_um_Programa_em_Python">Estrutura Básica de um Programa em Python</a>
+     <a class="nav-link" href="#Tipos_de_Dados">Tipos de Dados</a>
+     <a class="nav-link" href="#Exemplo_de_Uso_de_Tipos_de_Dados">Exemplo de Uso de Tipos de Dados</a>
+     <a class="nav-link" href="#Operadores">Operadores</a>
+     <a class="nav-link" href="#Controle_de_fluxo">Controle de fluxo</a>
+     <a class="nav-link" href="#Funções">Funções</a>
+     <a class="nav-link" href="#Classes_e_Objetos">Classes e Objetos</a>
+     <a class="nav-link" href="#Manipulação_de_Arquivos">Manipulação de Arquivos</a>
+     <a class="nav-link" href="#Bibliotecas_Padrão">Bibliotecas Padrão</a>
+     <a class="nav-link" href="#Bibliotecas_Externas">Bibliotecas Externas</a>
+     <a class="nav-link" href="#Referências">Referências</a>
+   
+     
+    
+</nav> 
+  <main id="main-doc">
+    <section class="main-section" id="Introdução">
+      <header>
+        <h2>Introdução</h2>
+        </header>
+<p>Python é uma linguagem de programação de alto nível, interpretada e de propósito geral. Foi criada por Guido van Rossum e lançada pela primeira vez em 1991. Python é conhecida por sua legibilidade e simplicidade sintática, o que a torna ideal tanto para iniciantes quanto para desenvolvedores experientes.</p>
+      
+    </section>
+    <section class="main-section"id="Características_Principais">
+      <header><h2>Características Principais</h2></header>
+  
+<ul>
+  <li><strong>Sintaxe Clara e Legível</strong>: Python enfatiza a legibilidade do código, utilizando indentação para delimitar blocos de código, ao invés de chaves ou palavras-chave específicas.</li>
+<li><strong>Tipagem Dinâmica</strong>: As variáveis em Python não precisam ter seu tipo declarado explicitamente, pois o tipo é determinado automaticamente em tempo de execução.</li>
+<li><strong>Interpretada</strong>: Python é executada linha a linha pelo interpretador, o que facilita o desenvolvimento e a depuração.</li>
+<li><strong>Linguagem Multiparadigma</strong>: Python suporta múltiplos paradigmas de programação, incluindo a programação orientada a objetos, imperativa, funcional e procedural.</li>
+<li><strong>Bibliotecas Padrão Extensas</strong>: Python inclui uma ampla gama de bibliotecas padrão, que facilitam a execução de tarefas comuns sem a necessidade de instalar pacotes adicionais.</li>
+</ul>
+      
+    </section>
+    <section class="main-section"id="Estrutura_Básica_de_um_Programa_em_Python">
+      <header><h2>Estrutura Básica de um Programa em Python</h2></header>
+     
+      <pre><code># Este é um comentário em Python
+print("Hello, World!")  # Imprime uma mensagem na tela</code></pre>
+     
+    </section>
+    <section class="main-section" id="Tipos_de_Dados">
+      <header><h2>Tipos de Dados</h2></header>
+     
+      <p>Python possui diversos tipos de dados integrados que são utilizados para armazenar diferentes tipos de informações. Os principais tipos de dados são:</p>
+      <ul><li><strong>Números</strong>: Inteiros (int), números de ponto flutuante (float) e números complexos (complex).</li>
+      <li><strong>Sequências</strong>: Strings (str), listas (list), tuplas (tuple).</li><li><strong>Mapas</strong>: Dicionários (dict).</li><li><strong>Conjuntos</strong>: Conjuntos (set), conjuntos imutáveis (frozenset).</li><li><strong>Booleanos</strong>: True e False.</li></ul>
+     
+    </section>
+    <section class="main-section" id="Exemplo_de_Uso_de_Tipos_de_Dados">
+      <header>
+      <h2>Exemplo de Uso de Tipos de Dados</h2></header>
+      <pre><code># Números
+a = 5  # int
+b = 3.14  # float
+c = 1 + 2j  # complex
+
+# Strings
+s = "Hello, World!"
+
+# Listas
+lista = [1, 2, 3, 4, 5]
+
+# Tuplas
+tupla = (1, 2, 3, 4, 5)
+
+# Dicionários
+dicionario = {"chave1": "valor1", "chave2": "valor2"}
+
+# Conjuntos
+conjunto = {1, 2, 3, 4, 5}
+       </code></pre>
+       
+    </section>
+    <section class="main-section" id="Operadores">
+      <header>
+      <h2>Operadores</h2></header> 
+      <p>Python oferece uma variedade de operadores que permitem realizar operações sobre variáveis e valores. Eles podem ser categorizados em:</p> 
+<ol>   
+  <h3>Operadores Aritméticos: Utilizados para operações matemáticas.</h3>
+      <ul class="operadores">
+         <li><strong>+ (adição)</strong>: Soma dois valores.</li>
+         <li><strong>- (subtração)</strong>: Subtrai o segundo valor do primeiro.</li>
+         <li><strong>* (multiplicação)</strong>: Multiplica dois valores.</li>
+         <li><strong>/ (divisão)</strong>: Divide o primeiro valor pelo segundo.</li>
+         <li><strong>% (módulo)</strong>: Retorna o resto da divisão do primeiro valor pelo segundo.</li>
+         <li><strong>** (exponenciação)</strong>: Eleva o primeiro valor à potência do segundo.</li>
+         <li><strong>// (divisão inteira)</strong>: Realiza a divisão e retorna apenas a parte inteira do resultado.</li>
+     </ul>  
+  
+    <h3>Operadores de Comparação: Utilizados para comparar dois valores.</h3>
+      <ul class="operadores">
+         <li><strong>== (igual a)</strong>: Retorna True se os valores forem iguais.</li>
+         <li><strong>!= (diferente de)</strong>: Retorna True se os valores forem diferentes.</li>
+         <li><strong>> (maior que)</strong>: Retorna True se o primeiro valor for maior que o segundo.</li>
+         <li><strong>< (menor que)</strong>: Retorna True se o primeiro valor for menor que o segundo.</li>
+         <li><strong>>= (maior ou igual a)</strong>: Retorna True se o primeiro valor for maior ou igual ao segundo.</li>
+         <li><strong><= (menor ou igual a)</strong>: Retorna True se o primeiro valor for menor ou igual ao segundo.</li>
+      </ul>
+    
+    <h3>Operadores Lógicos: Utilizados para combinar expressões condicionais.</h3>
+    <ul class="operadores">
+      <li><strong>and</strong>: Retorna True se ambas as expressões forem verdadeiras.</li>
+      <li><strong>or</strong>: Retorna True se pelo menos uma das expressões for verdadeira.</li>
+      <li><strong>not</strong>: Inverte o valor lógico da expressão.</li>
+    </ul>
+    <h3>Operadores Bit a Bit: Operam em bits individuais de números inteiros</h3>
+    <ul class="operadores">
+      <li><strong>& (E bit a bit)</strong>: Retorna 1 em cada posição de bit onde ambos os bits correspondentes são 1.</li>
+      <li><strong>| (OU bit a bit)</strong>: Retorna 1 em cada posição de bit onde pelo menos um dos bits correspondentes é 1.</li>
+      <li><strong>^ (OU Exclusivo bit a bit)</strong>: Retorna 1 em cada posição de bit onde apenas um dos bits correspondentes é 1.</li>
+      <li><strong>~ (NOT bit a bit)</strong>: Inverte todos os bits do operando.</li>
+      <li><strong><< (deslocamento à esquerda)</strong>: Desloca os bits do operando à esquerda pelo número de posições especificado.</li>
+      <li><strong>>> (deslocamento à direita)</strong>: Desloca os bits do operando à direita pelo número de posições especificado.</li>
+    </ul>
+   </section>
+   <section class="main-section"id="Controle_de_fluxo"><header>
+      <h2>Controle de fluxo</h2></header>
+      <p>O controle de fluxo em Python permite que você direcione a execução do programa com base em condições e laços. Os principais elementos de controle de fluxo são:</p>
+      <ul>
+        <li><strong>Condicionais</strong>: if, elif, else são usados para executar diferentes blocos de código com base em condições.</li></ul>
+        <pre>
+          <code>
+x = 10
+y = 20
+
+if x > y:
+    print("x é maior que y")
+elif x == y:
+    print("x é igual a y")
+else:
+    print("x é menor que y")
+          </code>
+        </pre>
+  <ul>
+    <li><strong>Laços de Repetição</strong>: for e while são usados para repetir a execução de um bloco de código.</li></ul>
+    <pre>
+      <code>
+# Laço for
+for i in range(5):
+    print(i)
+
+# Laço while
+contador = 0
+while contador < 5:
+    print(contador)
+    contador += 1
+      </code>
+    </pre>
+   <ul><li><strong>Controle de Laços</strong>: break e continue são usados para controlar a execução dos laços.</li></ul>
+    <pre>
+      <code>
+# Uso de break
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+
+# Uso de continue
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
+      </code>
+    </pre>
+    </section>
+    <section class="main-section" id="Funções"><header>
+      <h2>Funções</h2></header>
+      <p>As funções em Python são definidas usando a palavra-chave def e são usadas para encapsular um bloco de código que pode ser reutilizado. Uma função pode receber argumentos e retornar valores.</p>
+      <pre>
+        <code>def saudacao(nome):
+    return f"Olá, {nome}!"
+
+print(saudacao("Mundo"))
+        </code>
+      </pre>
+    </section>
+    <section class="main-section" id="Classes_e_Objetos">
+      <header>
+      <h2>Classes e Objetos</h2></header>
+      <p>Python é uma linguagem orientada a objetos. Classes são definidas usando a palavra-chave class, e objetos são instâncias de classes.</p>
+      <pre>
+        <code>
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def saudacao(self):
+        return f"Olá, meu nome é {self.nome} e eu tenho {self.idade} anos."
+
+pessoa = Pessoa("João", 30)
+print(pessoa.saudacao())
+        </code>
+      <pre>
+    </section>
+    <section class="main-section" id="Manipulação_de_Arquivos"><header>
+      <h2>Manipulação de Arquivos</h2></header>
+      <p>Python oferece funções integradas para ler e escrever arquivos.</p>
+      <pre>
+        <code>
+# Escrita em arquivo
+with open('arquivo.txt', 'w') as file:
+    file.write("Hello, World!")
+
+# Leitura de arquivo
+with open('arquivo.txt', 'r') as file:
+    content = file.read()
+    print(content)
+        </code>
+      </pre>
+    </section>
+    <section class="main-section" id="Bibliotecas_Padrão"><header>
+      <h2>Bibliotecas Padrão</h2></header>
+      <p>Python possui uma rica biblioteca padrão que inclui módulos para diversas tarefas, como:</p>
+      <ul>
+        <li><strong>os</strong>: Interação com o sistema operacional.</li>
+        <li><strong>sys</strong>: Parâmetros e funções específicos do sistema.</li>
+        <li><strong>math</strong>: Funções matemáticas.</li>
+        <li><strong>datetime</strong>: Manipulação de datas e horas.</li>
+        <li><strong>json</strong>: Leitura e escrita de JSON.</li>
+        <li><strong>re</strong>: Expressões regulares.</li>
+      </ul>
+      <p>Exemplo de uso de Bibliotecas Padrão</p>
+      <pre><code>import os
+import sys
+import math
+import datetime
+import json
+import re
+
+# Usando os para listar arquivos em um diretório
+print(os.listdir('.'))
+
+# Usando math para calcular a raiz quadrada
+print(math.sqrt(16))
+
+# Usando datetime para obter a data e hora atual
+print(datetime.datetime.now())
+
+# Usando json para converter um dicionário em uma string JSON
+dicionario = {"chave1": "valor1", "chave2": "valor2"}
+json_string = json.dumps(dicionario)
+print(json_string)
+
+# Usando re para encontrar todas as ocorrências de um padrão em uma string
+padrao = r'\d+'
+texto = "Existem 2 maçãs e 5 bananas"
+print(re.findall(padrao, texto))
+</code></pre>
+    </section>
+    <section class="main-section" id="Bibliotecas_Externas"><header>
+      <h2>Bibliotecas Externas</h2></header>
+    <p>Além das bibliotecas padrão, Python possui um vasto ecossistema de bibliotecas externas que podem ser instaladas usando o pip. Algumas das mais populares incluem:</p>
+    <ul>
+      <li><strong>NumPy</strong>: Computação numérica.</li>
+<li><strong>Pandas</strong>: Análise de dados.</li>
+<li><strong>Matplotlib</strong>: Visualização de dados.</li>
+<li><strong>Requests</strong>: Requisições HTTP.</li>
+<li><strong>Flask/Django</strong>: Desenvolvimento web.</li></ul>
+<p>Exemplo de Uso de Bibliotecas Externas</p>
+<pre><code># Instalação de bibliotecas externas
+# pip install numpy pandas matplotlib requests flask django
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import requests
+from flask import Flask
+
+# NumPy: Operações com arrays
+array = np.array([1, 2, 3, 4, 5])
+print(array * 2)
+
+# Pandas: Manipulação de DataFrames
+df = pd.DataFrame({'coluna1': [1, 2, 3], 'coluna2': [4, 5, 6]})
+print(df)
+
+# Matplotlib: Criação de gráficos
+plt.plot([1, 2, 3], [4, 5, 6])
+plt.show()
+
+# Requests: Requisições HTTP
+response = requests.get('https://api.github.com')
+print(response.json())
+
+# Flask: Criação de uma aplicação web básica
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Hello, Flask!"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+</code></pre></section>
+    <section class="main-section" id="Referências">
+      <header><h2>Referências</h2></header>
+      <p>Para mais detalhes e exemplos, consulte a documentação oficial do Python em <a href="https://www.python.org/">python.org.</a></p></section> 
+    
+
+  </main>
+
+</body>
+</html>
